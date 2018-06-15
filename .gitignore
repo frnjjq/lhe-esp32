@@ -50,3 +50,13 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# ESP32 Files
+sdkconfig
+build
+sdkconfig.old
+
+#Eclipse
+.cproject
+.project
+.settings

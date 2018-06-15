@@ -1,0 +1,27 @@
+menu "lhe-esp Configuration"
+
+config WIFI_SSID
+    string "WiFi SSID"
+    default "myssid"
+    help
+	SSID (network name) for the example to connect to.
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+    default "mypassword"
+    help
+	WiFi password (WPA or WPA2) for the example to use.
+
+config PORT
+    int "UDP Port"
+    default 3000
+    help
+	The UDP Port in which the client has to connect in order to obatin the lhe stream.
+
+config LHE_DICARD_LEVEL
+    int "Discard level of the stream"
+    default 0
+    help
+	Configures the Dsicard level, can vary from 0 to 5.
+
+endmenu
