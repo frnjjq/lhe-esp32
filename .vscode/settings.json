@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "stdbool.h": "c",
+        "stdint.h": "c",
+        "stdlib.h": "c",
+        "limits": "c",
+        "entropic_enc.h": "c",
+        "timer.h": "c",
+        "quantizer.h": "c",
+        "typeinfo": "c"
+    }
+}
