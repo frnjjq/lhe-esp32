@@ -7,6 +7,7 @@
 #include "include/entropic_enc.h"
 #include "include/lena.h"
 #define IMG_WIDTH 512
+#define IMG_HEIGHT 128
 
 //uint8_t img_data[120] = {0};
 double time_diff(struct timeval x , struct timeval y)
@@ -32,9 +33,9 @@ void app_main()
 
     gettimeofday(&before, NULL);
 
-    for (int i = 0; i<512; i++)
+    for (int i = 0; i<IMG_HEIGHT; i++)
     {
-        quantize_scanline(img_data + 512* IMG_WIDTH,IMG_WIDTH, hops, result);
+        quantize_scanline(img_data + i* IMG_WIDTH,IMG_WIDTH, hops, result);
         size = entropic_enc(hops, buffer, IMG_WIDTH);
     }
     gettimeofday(&after, NULL);
